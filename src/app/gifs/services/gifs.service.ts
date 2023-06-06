@@ -35,6 +35,7 @@ export class GifsService {
     this._tagHistory= JSON.parse(localStorage.getItem('history')!);
 
     if(this._tagHistory.length===0) return;
+    console.log(this._tagHistory[0]);
     this.searchTag(this._tagHistory[0]);
 
   }
